@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adaptive page</title>
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="header__container">
             <div class="header__col1">
-                <a href="#" class="logo__link"><img src="#" alt="logo" class="header__logo"></a>
+                <a href="#" class="logo__link"><img src="img/logo.svg" alt="logo" class="header__logo"></a>
                 <nav class="header__menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#" class="menu__link"></a>
+                            <div class="menu__link">Products</div>
+                            <img src="img/arrow.svg" alt="" class="link__arrow">
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__link">Learn</div>
+                            <img src="img/arrow.svg" alt="" class="link__arrow">
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__link">Support</div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__link">Who we are</div>
+                            <img src="img/arrow.svg" alt="" class="link__arrow">
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="header__col2">
-                <button class="header__button-login"></button>
-                <button class="header__button-signup"></button>
+                <button class="header__button-login">Log In</button>
+                <button class="header__button-signup">Sign Up</button>
             </div>
         </div>
     </header>
