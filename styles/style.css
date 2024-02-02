@@ -109,7 +109,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #C3F53C;
-  height: 654px;
+  min-height: 654px;
 }
 
 .main__col1 {
@@ -183,8 +183,8 @@ body {
   display: block;
   margin-top: 13px;
   margin-right: 119px;
-  max-width: 100%;
-  min-width: 85%;
+  max-width: 600px;
+  max-height: 600px;
 }
 
 .horisontal-line {
@@ -445,13 +445,12 @@ body {
 
 .six-block__col2 {
   z-index: 2;
-  margin-right: 117px;
 }
 
 .six-block-col2__img {
   display: block;
   max-width: 100%;
-  margin-top: 84px;
+  margin-top: 80px;
 }
 
 .six-block-col2__description {
@@ -464,25 +463,35 @@ body {
     display: flex;
     background: rgb(240, 235, 230);
   }
-  .six-block-col2__img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 }
 @media (max-width: 1400px) {
   .main_col2 {
     max-height: 654px;
   }
   .main_col2__background {
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 100%;
     margin-left: 60px;
     margin-top: 60px;
   }
   .main__first-block {
     display: flex;
     justify-content: space-between;
+  }
+  .main__six-block {
+    display: flex;
+    flex-direction: column;
+    height: 1400px;
+    background: rgb(240, 235, 230);
+  }
+  .six-block-col2__img {
+    display: block;
+    max-width: 100%;
+    margin-top: 80px;
+    margin: 0 auto;
+  }
+  .six-block-col2__description {
+    text-align: center;
+    margin-right: 35px;
   }
 }
 @media (max-width: 1160px) {
@@ -590,7 +599,6 @@ body {
     margin-right: 25px;
     z-index: 999;
     max-width: 100%;
-    max-height: 100%;
   }
   .main__first-block {
     display: flex;
@@ -656,10 +664,68 @@ body {
     line-height: 28px; /* 155.556% */
     letter-spacing: 0.25px;
   }
+  .six-block-col1__variety {
+    display: flex;
+    flex-direction: column;
+  }
+  .variety {
+    margin: 0 auto;
+  }
+  .variety:first-child {
+    margin: 0 auto;
+  }
+  .six-block-col1__title {
+    margin: 30px auto;
+    text-align: center;
+    font-weight: bold;
+  }
+  .six-block-col1_button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    width: 70%;
+    height: 35px;
+  }
+  .six-block-col1__description {
+    margin: 35px 30px;
+    max-width: 100%;
+  }
 }
 @media (max-width: 840px) {
   .main_col2__background {
     margin-left: 0;
+    max-width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .six-block-col1__description {
+    margin: 74px 25px 35px 25px;
+    max-width: 100%;
+  }
+  .six-block-col1_button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    width: 70%;
+    height: 35px;
+  }
+  .six-block__info {
+    margin: 0 auto;
+  }
+  .six-block-col1__variety {
+    display: flex;
+    flex-direction: column;
+  }
+  .variety {
+    margin: 0 auto;
+  }
+  .variety:first-child {
+    margin: 0 auto;
+  }
+  .six-block-col1__title {
+    margin: 30px auto;
+    text-align: center;
+    font-weight: bold;
   }
 }
 @media (max-width: 600px) {
@@ -699,6 +765,7 @@ body {
   }
   .main_col2__background {
     margin-left: 0;
+    max-width: 100%;
   }
 }
 @media (max-width: 578px) {
@@ -711,6 +778,7 @@ body {
   }
   .main_col2__background {
     margin-left: 0;
+    max-width: 100%;
   }
 }
 @media (max-width: 529px) {
@@ -736,9 +804,7 @@ body {
     display: block;
     margin-top: 13px;
     margin-right: 119px;
-    z-index: 999;
-    max-width: 480px;
-    height: auto;
+    max-width: 100%;
     margin-left: 0;
   }
   .main__first-block {
@@ -790,8 +856,7 @@ body {
     margin-top: 2px;
     margin-right: 2px;
     z-index: 999;
-    max-width: 470px;
-    height: auto;
+    max-width: 100%;
     margin-left: 0;
   }
   .main__first-block {
@@ -830,8 +895,7 @@ body {
     margin-top: 13px;
     margin-right: 119px;
     z-index: 999;
-    max-width: 430px;
-    height: auto;
+    max-width: 100%;
     margin-left: 0;
   }
   .main__first-block {
@@ -857,8 +921,7 @@ body {
     margin-top: 13px;
     margin-right: 119px;
     z-index: 999;
-    max-width: 400px;
-    height: auto;
+    max-width: 100%;
     margin-left: 0;
   }
   .main__first-block {
@@ -879,6 +942,7 @@ body {
   }
   .main_col2__background {
     margin-left: 0;
+    max-width: 100%;
   }
 }
 @media (max-width: 400px) {
@@ -900,8 +964,7 @@ body {
     margin-top: 13px;
     margin-right: 119px;
     z-index: 999;
-    max-width: 320px;
-    height: auto;
+    max-width: 100%;
     margin-left: 0;
   }
   .main__second-block div {
